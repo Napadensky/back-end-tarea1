@@ -9,7 +9,7 @@ const app = express()
 
 //  Configuraciones
 app.set('appName','Modulo BackEnd')
-let port = proccess.env.PORT || 8000;
+let port = process.env.PORT || 8000;
 
 
 //  Rutas
