@@ -9,7 +9,7 @@ const app = express()
 
 //  Configuraciones
 app.set('appName','Modulo BackEnd')
-app.set('port',3000)
+let port = proccess.env.PORT || 8000;
 
 
 //  Rutas
@@ -36,8 +36,8 @@ app.use( (req, res) => {
 
 
 //  Escucha de puerto
-app.listen(app.get('port'), () => {
+app.listen(port, () => {
   console.log(app.get('appName'));
-  console.log(`Escuchando en --> http://localhost:${app.get('port')}`)
+  console.log(`Escuchando en --> http://localhost:${port}`)
 })
 
